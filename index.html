@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse peer tutors and request a tutoring session.">
+    <title>Peer Tutoring Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Peer Tutoring Marketplace</h1>
+        <p>Learn from peers who recently aced the subjects you need.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#tutors">Tutors</a>
+            <a href="#booking">Book a Session</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tutors">
+            <h2>Available Tutors</h2>
+
+            <article>
+                <h3>Aarav Sharma</h3>
+                <p>Mathematics · ₹300/hour · Specializes in algebra and calculus.</p>
+            </article>
+
+            <article>
+                <h3>Priya Nair</h3>
+                <p>Spoken English · ₹250/hour · Helps students build fluency and confidence.</p>
+            </article>
+
+            <article>
+                <h3>Rahul Verma</h3>
+                <p>Physics · ₹350/hour · Expert in mechanics and exam preparation.</p>
+            </article>
+        </section>
+
+        <section id="booking">
+            <h2>Request a Tutoring Session</h2>
+
+            <form action="#" method="post">
+                <label for="student-name">Student name</label>
+                <input type="text" id="student-name" name="student-name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="" selected disabled>Select a subject</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="spoken-english">Spoken English</option>
+                    <option value="physics">Physics</option>
+                </select>
+
+                <label for="session-date">Preferred date</label>
+                <input type="date" id="session-date" name="session-date" required>
+
+                <label for="message">Additional details</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Request Session</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 Peer Tutoring Marketplace. All rights reserved.</p>
+        <p>Contact: support@peertutoring.com</p>
+    </footer>
+</body>
+</html>
