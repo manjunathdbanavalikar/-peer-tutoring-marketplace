@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse peer tutors and request a tutoring session.">
-    <title>Peer Tutoring Marketplace</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer Tutoring Marketplace</title>
 </head>
 <body>
-    <header>
-        <h1>Peer Tutoring Marketplace</h1>
-        <p>Learn from peers who recently aced the subjects you need.</p>
+  <header>
+    <h1>Peer Tutoring Marketplace</h1>
+    <p>Learn from students who have mastered the subject.</p>
+    <nav aria-label="Main navigation">
+      <a href="#tutors">Find tutors</a>
+      <a href="#booking">Book a session</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <nav aria-label="Main navigation">
-            <a href="#tutors">Tutors</a>
-            <a href="#booking">Book a Session</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section id="tutors" aria-labelledby="tutors-title">
+      <h2 id="tutors-title">Meet your tutors</h2>
 
-    <main>
-        <section id="tutors">
-            <h2>Available Tutors</h2>
+      <article>
+        <h3>Aisha Khan</h3>
+        <p><strong>Subject:</strong> Mathematics</p>
+        <p><strong>Rate:</strong> $12/hour</p>
+        <p>Explains algebra and calculus with patient, step-by-step examples.</p>
+      </article>
 
-            <article>
-                <h3>Aarav Sharma</h3>
-                <p>Mathematics · ₹300/hour · Specializes in algebra and calculus.</p>
-            </article>
+      <article>
+        <h3>Daniel Ortiz</h3>
+        <p><strong>Subject:</strong> Guitar</p>
+        <p><strong>Rate:</strong> $15/hour</p>
+        <p>Helps beginners build confidence through simple chords and practice routines.</p>
+      </article>
 
-            <article>
-                <h3>Priya Nair</h3>
-                <p>Spoken English · ₹250/hour · Helps students build fluency and confidence.</p>
-            </article>
+      <article>
+        <h3>Meera Patel</h3>
+        <p><strong>Subject:</strong> Spoken English</p>
+        <p><strong>Rate:</strong> $10/hour</p>
+        <p>Focuses on natural conversation, pronunciation, and everyday vocabulary.</p>
+      </article>
+    </section>
 
-            <article>
-                <h3>Rahul Verma</h3>
-                <p>Physics · ₹350/hour · Expert in mechanics and exam preparation.</p>
-            </article>
-        </section>
+    <section id="booking" aria-labelledby="booking-title">
+      <h2 id="booking-title">Request a session</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
 
-        <section id="booking">
-            <h2>Request a Tutoring Session</h2>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
 
-            <form action="#" method="post">
-                <label for="student-name">Student name</label>
-                <input type="text" id="student-name" name="student-name" required>
+        <div>
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" selected disabled>Select a subject</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="guitar">Guitar</option>
+            <option value="spoken-english">Spoken English</option>
+          </select>
+        </div>
 
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" required>
+        <div>
+          <label for="date">Preferred date</label>
+          <input id="date" name="date" type="date" required>
+        </div>
 
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject" required>
-                    <option value="" selected disabled>Select a subject</option>
-                    <option value="mathematics">Mathematics</option>
-                    <option value="spoken-english">Spoken English</option>
-                    <option value="physics">Physics</option>
-                </select>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you would like help with."></textarea>
+        </div>
 
-                <label for="session-date">Preferred date</label>
-                <input type="date" id="session-date" name="session-date" required>
+        <button type="submit">Request session</button>
+      </form>
+    </section>
+  </main>
 
-                <label for="message">Additional details</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
-                <button type="submit">Request Session</button>
-            </form>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <p>&copy; 2026 Peer Tutoring Marketplace. All rights reserved.</p>
-        <p>Contact: support@peertutoring.com</p>
-    </footer>
+  <footer id="contact">
+    <p>Copyright © 2026 Peer Tutoring Marketplace.</p>
+    <p>Contact: hello@peertutoringmarketplace.com</p>
+  </footer>
 </body>
 </html>
